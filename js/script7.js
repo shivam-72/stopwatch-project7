@@ -27,15 +27,15 @@ function reset(){
 function stopwatch(){
   if(timer == true){
       count = count + 1;
-      if(count == 100){
+      if(count == 99){
           sec = sec + 1;
           count =0;
       }
-      if(sec==60){
+      if(sec==59){
           min=min+1;
           sec =0;
       }
-      if(min==60){
+      if(min==59){
           hr=hr+1
           min=0;
           sec=0;
@@ -62,6 +62,6 @@ function stopwatch(){
       document.getElementById("min").innerHTML =minstring;
       document.getElementById("sec").innerHTML =secstring;
       document.getElementById("count").innerHTML =countstring;
-      setTimeout("stopwatch()",10);
+      setTimeout("stopwatch()",9.9);
   }
 }
